@@ -1,0 +1,24 @@
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = git@github.com:jlanzarotta/bufexplorer.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "bundle/repeat.vim"]
+	path = bundle/repeat.vim
+	url = git@github.com:vim-scripts/repeat.vim.git
+[submodule "bundle/vim-haml"]
+	path = bundle/vim-haml
+	url = git@github.com:vim-scripts/vim-haml.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git@github.com:vim-scripts/vim-markdown.git
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = git@github.com:vim-scripts/vim-pathogen.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git@github.com:vim-scripts/vim-surround.git
