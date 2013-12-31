@@ -11,12 +11,11 @@
 
 " When started as "evim", evim.vim will already have done these settings.
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-runtime bundle/colors/colors/xoria256.vim
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -98,18 +97,18 @@ endif
 
 colorscheme koehler
 
-au FileType html compiler tidy
+" au FileType html compiler tidy
 au BufRead,BufNewFile *.scss set filetype=scss
-au FileType asp compiler tidy
+" au FileType asp compiler tidy
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 au BufNewFile,BufRead *.asp set filetype=xhtml
 au BufNewFile,BufRead *.master set filetype=xhtml
 au BufNewFile,BufRead *.cshtml set filetype=xhtml
 
 if has ("win32unix")
-  setlocal equalprg=tidy\ --output-xhtml\ y\ -utf8\ --wrap-attributes\ 1\ --vertical-space\ 0\ --indent\ auto\ --wrap\ 0\ --show-body-only\ auto\ --preserve-entities\ 1\ -q\ -f\ "shellpipe=2>"
+ "  setlocal equalprg=tidy\ --output-xhtml\ y\ -utf8\ --wrap-attributes\ 1\ --vertical-space\ 0\ --indent\ auto\ --wrap\ 0\ --show-body-only\ auto\ --preserve-entities\ 1\ -q\ -f\ "shellpipe=2>"
 else
-  setlocal equalprg=tidy\ --output-xhtml\ y\ -utf8\ --wrap-attributes\ 1\ --vertical-space\ 0\ --indent\ auto\ --wrap\ 0\ --show-body-only\ auto\ --preserve-entities\ 1\ -q\ -f\ /tmp/err
+  " setlocal equalprg=tidy\ --output-xhtml\ y\ -utf8\ --wrap-attributes\ 1\ --vertical-space\ 0\ --indent\ auto\ --wrap\ 0\ --show-body-only\ auto\ --preserve-entities\ 1\ -q\ -f\ /tmp/err
 endif
 autocmd BufReadPre *.doc set ro
 autocmd BufReadPre *.doc set hlsearch!

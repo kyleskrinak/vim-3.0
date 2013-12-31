@@ -7,11 +7,20 @@
 * mv vim-files-2.0 $HOME/.vim
 * create $HOME/.vimrc and add "runtime vimrc" to that file.
 
-That's it
+## the best part
 
-Plugins used:
+to update plugins:
 
-1. pathogen, https://github.com/tpope/vim-pathogen
+`cd ~/.vim`
+
+`git submodule foreach git pull origin master`
+
+
+###That's all, folks
+
+## Plugins used:
+
+1. **Pathogen,** https://github.com/tpope/vim-pathogen
 1. vim-markdown, https://github.com/plasticboy/vim-markdown.git
 1. NERDTree, https://github.com/scrooloose/nerdtree.git
 1. Repeat, https://github.com/vim-scripts/repeat.vim.git
