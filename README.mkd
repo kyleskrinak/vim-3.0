@@ -6,6 +6,9 @@
 * Delete (or archive) your existing $HOME/.vim directory
 * mv vim-files-2.0 $HOME/.vim
 * create $HOME/.vimrc and add "runtime vimrc" to that file.
+* cd $HOME/.vim
+* `git submodule init && git submodule update` 
+  * failing to run this will fail to download plugins
 
 ## the best part
 
