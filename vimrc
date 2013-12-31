@@ -168,6 +168,12 @@ function! FormatTTS()
   % s/\n\n\n\n/\r\r/g
   % s/[^[:alnum:][:punct:][:space:]]//ge
   % s/\n\n/\r[[slnc 2000]]\r/ge
+  call inputsave()
+  let name = input('Enter 1MJ or BOTW: ')
+  call inputrestore()
+  let l:fname = '~/Desktop/' . strftime('%Y-%m-%d') . '-' . name . '.txt'
+  silent execute 'write' l:fname
+  echomsg 'Wrote' l:fname
 endfunction
 
 nmap \F :call FormatTTS()<CR>
