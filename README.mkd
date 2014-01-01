@@ -33,3 +33,4 @@ to update plugins:
 1. **BufExplorer**, https://github.com/jlanzarotta/bufexplorer
 1. **Emmet-vim**, (used to be Christian Robinson's X/HTML plugin) git@github.com:mattn/emmet-vim.git
 1. **Syntastic**, git@github.com:scrooloose/syntastic.git
+1. **SnipMate**, git@github.com:msanders/snipmate.vim.git
