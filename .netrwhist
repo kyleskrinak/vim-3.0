@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/kds38/.vim/bundle/bufexplorer'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/kds38/Downloads/tts_courses'
+let g:netrw_dirhist_2='scp://dpro//home/drupalpro/.ssh/'
+let g:netrw_dirhist_3='/Users/kds38/Documents/Duke/tmp/rsync-excludes_txt/.git/info'

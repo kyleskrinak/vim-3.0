@@ -167,6 +167,7 @@ function! FormatTTS()
   % s/\n\n\n\n/\r\r/g
   % s/[^[:alnum:][:punct:][:space:]]//ge
   % s/\n\n/\r[[slnc 2000]]\r/ge
+  % s/\[\[slnc 2000\]\]\n\n\[\[slnc 2000\]\]\n/\r/ge
   call inputsave()
   let name = input('Enter 1MJ or BOTW: ')
   call inputrestore()
@@ -192,3 +193,4 @@ function! s:TabularizeCucumberTables()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
