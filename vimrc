@@ -95,8 +95,6 @@ if &t_Co == 256
    colorscheme xoria256
 endif
 
-colorscheme koehler
-
 " au FileType html compiler tidy
 au BufRead,BufNewFile *.scss set filetype=scss
 " au FileType asp compiler tidy
